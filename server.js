@@ -4,7 +4,7 @@ var express = require('express'),
     methodOverride = require('method-override');
 
 app.use(bodyParser.json())
-  .use(bodyParser({urlencoded:false})
+  .use(bodyParser({urlencoded:false}))
   .use(methodOverride('_method'));
 
 app.listen(process.env.PORT || 3000, () => {
