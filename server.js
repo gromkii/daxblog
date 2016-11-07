@@ -4,8 +4,14 @@ var express = require('express'),
     methodOverride = require('method-override');
 
 app.use(bodyParser.json())
-  .use(bodyParser({urlencoded:false}))
-  .use(methodOverride('_method'));
+  .use(bodyParser.urlencoded({extended:false}))
+  .use(methodOverride('_method'))
+  .use(express.static('app'));
+;
+
+app.get('/', (req, res) => {
+  res.sendFile('index.html', {root:'./app/views'});
+});
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server is listening.');
