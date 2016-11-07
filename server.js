@@ -6,7 +6,8 @@ var express = require('express'),
 app.use(bodyParser.json())
   .use(bodyParser.urlencoded({extended:false}))
   .use(methodOverride('_method'))
-  .use(express.static('app'));
+  .use('/lib', express.static(__dirname + '/node_modules/'))
+  .use(express.static('app'))
 ;
 
 app.get('/', (req, res) => {

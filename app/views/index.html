@@ -6,22 +6,24 @@
   </title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/node_modules/foundation-sites/dist/foundation.min.css" />
+  <link rel="stylesheet" href="lib/foundation-sites/dist/foundation.min.css" />
 
   <!-- libs -->
-  <script src="/node_modules/foundation-sites/dist/foundation.min.js"></script>
-  <script src="/node_modules/angular/angular.min.js"></script>
-  <script src="/node_modules/angular-route/angular-route.min.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/foundation-sites/dist/foundation.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-route/angular-route.min.js"></script>
 
   <!-- app -->
+  <script src="/src/app.js"></script>
 
-
-
+  <!-- controllers -->
+  <script src="/src/controllers/Main.js"></script>
   </head>
-  <body>
 
-    <h1>Sup.</h1>
-    <main id="app">
+
+  <body>
+    <main ng-view>
 
     </main>
   </body>
