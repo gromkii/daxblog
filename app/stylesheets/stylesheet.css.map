@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACL,OAAO,EAAC,IAAI",
+"sources": ["controllers/Main.scss"],
+"names": [],
+"file": "stylesheet.css"
+}
