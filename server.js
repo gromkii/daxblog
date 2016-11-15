@@ -16,8 +16,8 @@ app.use('/api', api);
 
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {root:'./app/views'});
-});
+  res.sendFile('index.html', {root:'./app/views/'});  
+})
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server is listening.');
