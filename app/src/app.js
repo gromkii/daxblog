@@ -2,6 +2,7 @@
   angular
     .module('app', [
       'Main',
+      'About',
       'ui.router',
     ])
     .config(state)
@@ -10,7 +11,7 @@
 
     function state($stateProvider,$urlRouterProvider, $locationProvider) {
       $urlRouterProvider.otherwise('/');
-      
+
       $stateProvider
         .state('main', {
           url:'/',
@@ -18,9 +19,11 @@
           controllerAs:'main',
           templateUrl:'views/controllers/Main.html'
         })
-        .state('testing', {
-          url:'/test',
-          templateUrl:'views/testing.html'
+        .state('about', {
+          url:'/about',
+          controller:'About',
+          controllerAs:'about',
+          templateUrl:'views/controllers/About.html'
         })
-    } 
+}
 })();
