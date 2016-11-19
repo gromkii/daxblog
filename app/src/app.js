@@ -2,7 +2,6 @@
   angular
     .module('app', [
       'Main',
-      'About',
       'Portfolio',
       'navbar',
       'ui.router',
