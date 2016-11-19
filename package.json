@@ -17,7 +17,6 @@
     "body-parser": "^1.15.2",
     "bookshelf": "^0.10.2",
     "express": "^4.14.0",
-    "foundation-sites": "^6.2.4",
     "jquery": "^2.2.4",
     "knex": "^0.12.6",
     "method-override": "^2.3.6",
