@@ -6,11 +6,12 @@
   </title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="lib/semantic-ui/dist/semantic-ui.min.css" />
+  <link rel="stylesheet" href="lib/semantic-ui/dist/semantic.min.css" />
   <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
   <!-- libs -->
   <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/semantic-ui/dist/semantic.min.js"></script>
+  <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 
   <!-- app -->
@@ -19,10 +20,16 @@
   <!-- controllers -->
   <script src="/src/controllers/Main.js"></script>
   <script src="/src/controllers/About.js"></script>
+
+  <!-- directives -->
+  <script src="/src/directives/navbar.js"></script>
   </head>
 
 
   <body>
+
+    <navbar></navbar>
+
     <main ui-view>
 
     </main>

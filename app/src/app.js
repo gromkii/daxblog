@@ -3,6 +3,7 @@
     .module('app', [
       'Main',
       'About',
+      'navbar',
       'ui.router',
     ])
     .config(state)
