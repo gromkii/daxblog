@@ -5,3 +5,8 @@ $text: #ddd;
 $accent: #66dddd;
 
 // Core Components
+
+body {
+  background-color:$body;
+  color:$text;
+}

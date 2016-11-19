@@ -1,5 +1,8 @@
 // -- Core -- //
-@import 'common/core';
+@import 'common/core.scss';
 
 // -- Controllers -- //
 @import 'controllers/Main.scss';
+
+// -- Directives -- //
+@import 'directives/Navbar.scss'
