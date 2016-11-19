@@ -3,6 +3,7 @@
     .module('app', [
       'Main',
       'About',
+      'Portfolio',
       'navbar',
       'ui.router',
     ])
@@ -25,6 +26,12 @@
           controller:'About',
           controllerAs:'about',
           templateUrl:'views/controllers/About.html'
+        })
+        .state('portfolio', {
+          url:'/portfolio',
+          controller:'Portfolio',
+          controllerAs:'portfolio',
+          templateUrl:'views/controllers/Portfolio.html'
         })
 }
 })();
